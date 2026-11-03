@@ -38,9 +38,10 @@ fields:
   resolution: 0.1
 - id: outputLevel0
   name: Output 0 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA0
   name: Output 0 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -60,9 +61,10 @@ fields:
   resolution: 0.1
 - id: outputLevel1
   name: Output 1 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA1
   name: Output 1 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -82,9 +84,10 @@ fields:
   resolution: 0.1
 - id: outputLevel2
   name: Output 2 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA2
   name: Output 2 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -104,9 +107,10 @@ fields:
   resolution: 0.1
 - id: outputLevel3
   name: Output 3 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA3
   name: Output 3 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -126,9 +130,10 @@ fields:
   resolution: 0.1
 - id: outputLevel4
   name: Output 4 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA4
   name: Output 4 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -148,9 +153,10 @@ fields:
   resolution: 0.1
 - id: outputLevel5
   name: Output 5 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA5
   name: Output 5 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -170,9 +176,10 @@ fields:
   resolution: 0.1
 - id: outputLevel6
   name: Output 6 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA6
   name: Output 6 Unknown Flag A
   type: UNSIGNED_INTEGER
@@ -192,9 +199,10 @@ fields:
   resolution: 0.1
 - id: outputLevel7
   name: Output 7 Level
-  type: PERCENTAGE
+  type: UNSIGNED_INTEGER
   bits: 10
   resolution: 0.1
+  unit: '%'
 - id: outputFlagA7
   name: Output 7 Unknown Flag A
   type: UNSIGNED_INTEGER
