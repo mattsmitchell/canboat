@@ -13,6 +13,7 @@ jobs:
         with:
           ref: ${{ github.ref_name }}
           persist-credentials: true
+          fetch-depth: 0
       - name: Install generation dependencies
         run: sudo apt-get update && sudo apt-get install -y xsltproc libxml2-utils python3-setuptools
       - name: Validate source and tests
@@ -22,7 +23,9 @@ jobs:
       - name: Regenerate artifacts
         run: make generated
       - name: Check contract
-        run: make pr
+        run: |
+          git fetch origin master
+          make pr
       - name: Commit generated artifacts
         run: |
           if ! git diff --quiet; then
