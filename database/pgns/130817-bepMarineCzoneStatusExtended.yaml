@@ -160,7 +160,5 @@ samples:
     dipswitch: 248
     outputCurrent0: 0
     outputLevel0: 0
-    outputUnknownFlags0: '04'
     outputLevel6: 100
     outputLevel7: 100
-    outputUnknownFlags7: '0c'
