@@ -43,18 +43,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA0
-  name: Output 0 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB0
-  name: Output 0 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits0
-  name: Output 0 Unknown Upper Bits
+- id: outputUnknownFlags0
+  name: Output 0 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent1
   name: Output 1 Current
   type: CURRENT
@@ -66,18 +58,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA1
-  name: Output 1 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB1
-  name: Output 1 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits1
-  name: Output 1 Unknown Upper Bits
+- id: outputUnknownFlags1
+  name: Output 1 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent2
   name: Output 2 Current
   type: CURRENT
@@ -89,18 +73,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA2
-  name: Output 2 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB2
-  name: Output 2 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits2
-  name: Output 2 Unknown Upper Bits
+- id: outputUnknownFlags2
+  name: Output 2 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent3
   name: Output 3 Current
   type: CURRENT
@@ -112,18 +88,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA3
-  name: Output 3 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB3
-  name: Output 3 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits3
-  name: Output 3 Unknown Upper Bits
+- id: outputUnknownFlags3
+  name: Output 3 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent4
   name: Output 4 Current
   type: CURRENT
@@ -135,18 +103,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA4
-  name: Output 4 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB4
-  name: Output 4 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits4
-  name: Output 4 Unknown Upper Bits
+- id: outputUnknownFlags4
+  name: Output 4 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent5
   name: Output 5 Current
   type: CURRENT
@@ -158,18 +118,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA5
-  name: Output 5 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB5
-  name: Output 5 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits5
-  name: Output 5 Unknown Upper Bits
+- id: outputUnknownFlags5
+  name: Output 5 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent6
   name: Output 6 Current
   type: CURRENT
@@ -181,18 +133,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA6
-  name: Output 6 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB6
-  name: Output 6 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits6
-  name: Output 6 Unknown Upper Bits
+- id: outputUnknownFlags6
+  name: Output 6 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 - id: outputCurrent7
   name: Output 7 Current
   type: CURRENT
@@ -204,18 +148,10 @@ fields:
   bits: 10
   resolution: 0.1
   unit: '%'
-- id: outputFlagA7
-  name: Output 7 Unknown Flag A
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputFlagB7
-  name: Output 7 Unknown Flag B
-  type: UNSIGNED_INTEGER
-  bits: 1
-- id: outputUnknownBits7
-  name: Output 7 Unknown Upper Bits
+- id: outputUnknownFlags7
+  name: Output 7 Unknown Flags (Bits 10-15)
   type: BINARY
-  bits: 4
+  bits: 6
 explanation: 'Some Yacht Devices YDAB-01 adapters have been observed sending a shorter stub form of PGN 130817 for module presence; the full eight-output record layout described here is based on the captured ACOI status frame.'
 samples:
 - raw: "2026-11-02-00:00:00.000,6,130817,11,255,28,27,99,00,f8,00,00,04,00,00,04,00,00,04,00,00,04,00,00,04,00,00,04,00,e8,07,00,e8,0f"
@@ -224,7 +160,7 @@ samples:
     dipswitch: 248
     outputCurrent0: 0
     outputLevel0: 0
-    outputFlagA0: 1
+    outputUnknownFlags0: '04'
     outputLevel6: 100
     outputLevel7: 100
-    outputFlagB7: 1
+    outputUnknownFlags7: '0c'
